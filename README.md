@@ -1,2 +1,6 @@
 # bin-commands
-Rewrite of existing commands in /bin using Go
+To further deepen my knowledge in Go, I decided to rewrite an existing CLI program. The question was "Which program to rewrite?". The answer: 
+
+```
+$ ls /bin
+```
