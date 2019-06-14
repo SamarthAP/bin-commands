@@ -4,3 +4,6 @@ To further deepen my knowledge in Go, I decided to rewrite an existing CLI progr
 ```
 $ ls /bin
 ```
+
+"Completed" Commands:
+- echo
