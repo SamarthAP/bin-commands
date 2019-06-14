@@ -8,7 +8,7 @@ import (
 )
 
 var echoCmd = &cobra.Command{
-	Use:   "echo",
+	Use:   "echo [string]",
 	Short: "Output the ARGS",
 	Long:  `Output the ARGS`,
 	Run: func(cmd *cobra.Command, args []string) {
