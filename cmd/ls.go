@@ -24,20 +24,18 @@ func directoryContents(path string) {
 }
 
 var lsCmd = &cobra.Command{
-	Use:   "ls",
+	Use:   "ls [path]",
 	Short: "List directory contents",
 	Long:  "List directory contents",
 	Run: func(cmd *cobra.Command, args []string) {
-		path := cmd.Flag("path")
-		if path.Value.String() != "" {
-			directoryContents(path.Value.String())
-		} else {
+		if len(args) < 1 {
 			directoryContents(".")
+		} else {
+			directoryContents(args[0])
 		}
 	},
 }
 
 func init() {
 	rootCmd.AddCommand(lsCmd)
-	lsCmd.Flags().StringP("path", "p", "", "List directory contents of specified path")
 }
