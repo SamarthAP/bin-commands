@@ -7,3 +7,4 @@ $ ls /bin
 
 "Completed" Commands:
 - echo
+- ls
